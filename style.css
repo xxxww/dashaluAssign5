@@ -1,0 +1,195 @@
+body {
+  background-color: lightgrey;
+  overflow:visible;
+}
+h1{
+  color: black;
+  font-family: Verdana;
+  font-size: 30px;
+  text-align:center;
+}
+
+nav{
+  border-width: thick;
+  border: 1px;
+  padding: 7px;
+  text-align:center;
+}
+
+span{
+  font-weight:bold;
+  font-size: 18px;
+}
+
+th,td{
+
+  padding: 15px;
+}
+
+table, tr, th, td{
+  font-family: Arial;
+  font-weight: normal;
+  text-align: center;
+  border-collapse: collapse;
+  border: 12px solid lightgrey;
+  position: relative;
+  /*width: 6;*/
+  height: 5px;
+  clear:both;
+  overflow:visible;
+  margin: auto;
+
+}
+
+.floatright{
+  top: 120px;
+  position: absolute;
+  right: 0;
+  clear:both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+
+tr,td {
+  background-color: khaki;
+}
+
+td img{
+  display:none;
+}
+
+td:hover img{
+  display:block;
+}
+
+img {
+  width: 90px;
+  height: 50px;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+form {
+  text-align:left;
+  display:inline-block;
+  border: 1px;
+  padding-bottom: 10px;
+
+}
+
+p{
+  margin-right: 30px;
+}
+
+input[type="text"]{
+  display:inline-block;
+  width:100px;
+  margin-left: 5px;
+}
+input[type="time"]{
+  display:inline-block;
+  width:100px;
+  margin-left:5px;
+}
+input[type=submit]{
+  border: none;
+  color: black;
+  padding: 5px 10px;
+  text-decoration: none;
+  cursor: pointer;
+  display:inline-block;
+  width:100px;
+  margin-left:1px;
+}
+select{
+  float:right;
+  display:inline-block;
+  width:110px;
+  margin-left: 5px;
+}
+
+.center{
+  text-align:center;
+  margin-top: 30px;
+}
+
+.fontstyle{
+  font-style: italic;
+}
+
+.sentence{
+  clear: both;
+  font-size: small;
+  font-style: italic;
+}
+
+.pad_right{
+  padding-right:2em;
+}
+
+.calendar_form{
+  text-align:center;
+  border: 1px;
+  background-color: white;
+  width:800px;
+  height: 60px;
+  margin-left: auto;
+}
+
+#map {
+  width: 60%;
+  height:600px;
+  position: relative;
+  /*fix offset when needed*/
+  margin: auto;
+}
+
+#right-panel {
+  position: fixed;
+  font-family: 'Roboto','sans-serif';
+  line-height: 20px;
+  bottom: 0;
+  right:0;
+  width: 400px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#right-panel select, #right-panel input {
+  font-size: 15px;
+}
+
+#right-panel select {
+  width: 100%;
+}
+
+#right-panel i {
+  font-size: 12px;
+}
+#right-panel {
+  float: right;
+  overflow: auto;
+}
+p.alert {
+  font-size: 26px;
+  text-align: center;
+  color: red;
+}
+
+@media print {
+  #map {
+    height: 500px;
+    margin: 0;
+  }
+  #right-panel {
+    float: right;
+    width: auto;
+  }
+}
+
+
